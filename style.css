@@ -222,6 +222,29 @@ a{ color: inherit; text-decoration:none; }
   color: var(--maroon-dark);
 }
 
+/* ---------- LINK PORTFÓLIO ---------- */
+.portfolio-link{
+  background: var(--cream);
+  text-align:center;
+  padding: 0 24px 90px;
+}
+
+.portfolio-link a{
+  display:inline-block;
+  font-family: 'Belleza', serif;
+  font-style: italic;
+  font-size: 1.2rem;
+  color: var(--maroon);
+  border-bottom: 1px solid var(--maroon);
+  padding-bottom: 4px;
+  transition: color .2s ease, border-color .2s ease;
+}
+
+.portfolio-link a:hover{
+  color: var(--maroon-dark);
+  border-color: var(--maroon-dark);
+}
+
 /* ---------- COMO POSSO AJUDAR / PRODUTOS ---------- */
 .ajudar{
   background: var(--dark);
