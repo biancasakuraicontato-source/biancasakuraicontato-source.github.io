@@ -338,6 +338,130 @@ a{ color: inherit; text-decoration:none; }
   transform: translateY(-1px);
 }
 
+.saiba-mais{
+  text-align:center;
+  font-size: 0.8rem;
+  color: #cfc6bb;
+  text-decoration: underline;
+  margin-top: -4px;
+}
+
+.saiba-mais:hover{
+  color: var(--text-light);
+}
+
+/* ---------- PÁGINA DE SERVIÇO ---------- */
+.servico-detalhe{
+  background: var(--cream);
+  padding: 80px 24px;
+}
+
+.servico-inner{
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.servico-inner h2{
+  font-size: clamp(1.8rem, 4vw, 2.4rem);
+  color: var(--maroon);
+  margin-bottom: 22px;
+}
+
+.fit-section{
+  background: var(--dark);
+  padding: 80px 24px;
+}
+
+.fit-grid{
+  max-width: 1000px;
+  margin: 0 auto;
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+@media (max-width: 760px){
+  .fit-grid{ grid-template-columns: 1fr; }
+}
+
+.fit-card{
+  background: var(--dark-2);
+  border-radius: 14px;
+  padding: 30px 28px;
+  border-left: 4px solid var(--whatsapp);
+}
+
+.fit-card.nao{
+  border-left: 4px solid var(--maroon);
+}
+
+.fit-card h3{
+  font-family: 'Belleza', serif;
+  color: var(--text-light);
+  font-size: 1.15rem;
+  margin-bottom: 16px;
+}
+
+.fit-card ul{
+  list-style:none;
+  display:flex;
+  flex-direction:column;
+  gap: 10px;
+}
+
+.fit-card li{
+  font-size: 0.92rem;
+  color: #e6e0d6;
+  padding-left: 26px;
+  position: relative;
+}
+
+.fit-card.sim li::before{
+  content: "✓";
+  position:absolute;
+  left:0;
+  color: #7fbf8f;
+  font-weight:700;
+}
+
+.fit-card.nao li::before{
+  content: "✕";
+  position:absolute;
+  left:0;
+  color: #e08a7d;
+  font-weight:700;
+}
+
+.feedback-quote{
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 80px 24px;
+}
+
+.feedback-quote .quote-box{
+  background: var(--cream-2);
+  border-radius: 16px;
+  padding: 40px 44px;
+  text-align:center;
+  box-shadow: 0 12px 30px rgba(43,39,36,0.1);
+}
+
+.feedback-quote .quote-text{
+  font-family: 'Belleza', serif;
+  font-style: italic;
+  font-size: 1.35rem;
+  color: var(--maroon-dark);
+  margin-bottom: 18px;
+  line-height: 1.4;
+}
+
+.feedback-quote .autor{
+  font-size: 0.8rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: .05em;
+}
+
 /* ---------- DÚVIDAS FREQUENTES ---------- */
 .duvidas{
   background: var(--cream);
@@ -453,6 +577,11 @@ footer a{
 
 @media (max-width: 760px){
   .case-inner{ grid-template-columns: 1fr; }
+}
+
+.case-inner.sem-stats{
+  grid-template-columns: 1fr;
+  max-width: 720px;
 }
 
 .case-tag{
