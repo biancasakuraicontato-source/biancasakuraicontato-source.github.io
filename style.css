@@ -244,6 +244,102 @@ a{ color: inherit; text-decoration:none; }
   color: var(--maroon-dark);
 }
 
+/* ---------- KICKER (eyebrow label) ---------- */
+.kicker{
+  display:block;
+  text-align:left;
+  font-family:'Manrope', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--maroon);
+  margin-bottom: 10px;
+}
+
+.kicker.light{ color: #e7c9a9; }
+.kicker.center{ text-align:center; }
+
+/* ---------- TRUST BAR ---------- */
+.trust-bar{
+  background: var(--cream-2);
+  padding: 44px 24px;
+  border-top: 1px solid rgba(43,39,36,0.08);
+  border-bottom: 1px solid rgba(43,39,36,0.08);
+}
+
+.trust-bar-inner{
+  max-width: 980px;
+  margin: 0 auto;
+  display:grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+@media (max-width: 760px){
+  .trust-bar-inner{ grid-template-columns: 1fr 1fr; row-gap: 32px; }
+}
+
+.trust-item{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
+  gap: 8px;
+}
+
+.trust-item svg{
+  width: 26px;
+  height: 26px;
+  color: var(--maroon);
+}
+
+.trust-item .num{
+  font-family:'Sora', sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--dark);
+}
+
+.trust-item .label{
+  font-size: 0.76rem;
+  color: var(--muted);
+  line-height: 1.35;
+  max-width: 150px;
+}
+
+/* ---------- DEPOIMENTO EM DESTAQUE (home) ---------- */
+.home-quote{
+  background: var(--dark);
+  color: var(--text-light);
+  padding: 80px 24px;
+  text-align:center;
+}
+
+.home-quote .mark{
+  font-family:'Sora', sans-serif;
+  font-size: 2.6rem;
+  color: #e7c9a9;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
+.home-quote blockquote{
+  font-family:'Belleza', serif;
+  font-style: italic;
+  font-size: 1.3rem;
+  max-width: 680px;
+  margin: 0 auto 18px;
+  line-height: 1.55;
+}
+
+.home-quote .autor{
+  font-size: 0.78rem;
+  color: #cfc6bb;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+}
+
 /* ---------- LINK PORTFÓLIO ---------- */
 .portfolio-link{
   background: var(--cream);
@@ -313,6 +409,23 @@ a{ color: inherit; text-decoration:none; }
   display:flex;
   flex-direction:column;
   gap: 14px;
+}
+
+.produto-card .icon{
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: rgba(201,146,19,0.16);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin-bottom: 2px;
+}
+
+.produto-card .icon svg{
+  width: 22px;
+  height: 22px;
+  color: var(--gold);
 }
 
 .produto-card .tag{
@@ -546,6 +659,8 @@ a{ color: inherit; text-decoration:none; }
   font-size: 1.2rem;
   color: var(--maroon-dark);
   margin-bottom: 10px;
+  padding-left: 14px;
+  border-left: 3px solid var(--gold);
 }
 
 .duvida-item p{
